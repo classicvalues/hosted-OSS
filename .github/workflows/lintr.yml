@@ -36,10 +36,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup R
-        uses: r-lib/actions/setup-r@5f7565a60ce6df73c78a3cfa9754f4681d30c346
+        uses: r-lib/actions/setup-r@30e67efa0d3e82f278478ae5f1bd50271e522334
 
       - name: Setup lintr
-        uses: r-lib/actions/setup-r-dependencies@5f7565a60ce6df73c78a3cfa9754f4681d30c346
+        uses: r-lib/actions/setup-r-dependencies@30e67efa0d3e82f278478ae5f1bd50271e522334
         with:
           extra-packages: lintr
 
