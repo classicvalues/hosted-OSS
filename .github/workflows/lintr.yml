@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup R
         uses: r-lib/actions/setup-r@467c2b35913addb015a48dcbf1893017e6167e67
