@@ -38,7 +38,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@7d546f4868fb108ed378764d873683f920672ae2 # v1.149.0
         with:
-          ruby-version: 2.7
+          ruby-version: 2.7.8
           bundler-cache: true
 
       - name: Install puppet-lint
