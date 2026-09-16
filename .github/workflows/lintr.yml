@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.7.0
 
       - name: Setup R
         uses: r-lib/actions/setup-r@467c2b35913addb015a48dcbf1893017e6167e67
@@ -49,7 +49,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload analysis results to GitHub
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v2.28.1
         with:
           sarif_file: lintr-results.sarif
           wait-for-processing: true
