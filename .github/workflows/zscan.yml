@@ -36,7 +36,7 @@ jobs:
       actions: read           # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3.7.0
 
     - name: Execute gradle build
       run: ./gradlew build    # Change this to build your mobile application
@@ -55,7 +55,7 @@ jobs:
         app_file: app-release-unsigned.apk
 
     - name: Upload SARIF file
-      uses: github/codeql-action/upload-sarif@v2
+      uses: github/codeql-action/upload-sarif@v2.28.1
       with:
         sarif_file: Zimperium.sarif
         
